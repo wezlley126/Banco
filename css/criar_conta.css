@@ -1,0 +1,29 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+.div_main{
+  display: grid;
+  justify-content: center;
+}
+
+form{
+  text-align: center;
+  border: 2px solid black;
+  padding: 3rem 4rem;
+  display: grid;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+form input{
+  padding: 0.5rem;
+}
+
+form input:hover{
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
