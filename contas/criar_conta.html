@@ -9,10 +9,13 @@
     <div class="div_main">
       <form class="form" action="criar_conta.php" method="post">
         <h2>Crie sua conta</h2>
-        <input type="number" name="cpf" value="" placeholder="CPF">
-        <input type="text" name="nome" value="" placeholder="Nome">
-        <input type="text" name="nome_completo" value="" placeholder="Nome completo">
-        <input type="date" name="nascimento" value="" placeholder="Nascimento">
+        <input type="number" name="cpf" value="" placeholder="CPF" maxlength="11" required>
+        <input type="text" name="nome" value="" placeholder="Nome" maxlength="30" required>
+        <input type="text" name="nome_completo" value="" placeholder="Nome completo" maxlength="100" required>
+        <input type="email" name="email" value="" placeholder="Email" maxlength="255" required>
+        <input type="password" name="senha" value="" placeholder="Senha" required>
+        <input type="password" name="confirm_senha" value="" placeholder="Confirmar senha" required>
+        <input type="date" name="nascimento" value="" placeholder="Nascimento" required>
         <input type="submit" name="criar" value="Criar conta">
       </form>
     </div>
