@@ -12,7 +12,7 @@
   echo "$cpf <br/> $nome <br/> $nome_completo <br/> $nascimento";
 
   if ($senha == $confirm_senha) {
-    $comando = "INSERT INTO users VALUES ('$cpf', '$nome', '$nome_completo', '$email', '$senha', '$nascimento', 0)";
+    $comando = "INSERT INTO users VALUES ('$cpf', '$nome', '$nome_completo', '$email', '$senha', '$nascimento', 2000)";
     $query = mysqli_query($connect, $comando);
     if ($query) {
       echo "<br/>Usuário criado com sucesso";

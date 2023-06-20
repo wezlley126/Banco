@@ -9,6 +9,11 @@
   justify-content: center;
 }
 
+.nao_possuo_conta{
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+
 form{
   text-align: center;
   border: 2px solid black;
@@ -20,6 +25,7 @@ form{
 
 form input{
   padding: 0.5rem;
+
 }
 
 form input:hover{

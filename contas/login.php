@@ -13,14 +13,13 @@
   $num_rows = mysqli_num_rows($query);
   if ($num_rows == 1) {
     echo "<br/>Usuário existe, realizar login";
+    $user = mysqli_fetch_assoc($query);
+    echo "<br/>";
+    unset($user['senha']);
+    $user_cookie = serialize($user);
+    setcookie('user', $user_cookie, time() + 3600, '/');
+    header('Location: ../index.php');
   }else{
-    echo "<br/>Usuário inexistente";
+    header('Location: login.html');
   }
-  $user = mysqli_fetch_assoc($query);
-  echo "<br/>";
-  unset($user['senha']);
-  $user_cookie = serialize($user);
-  unset($user);
-  setcookie('user', $user_cookie, time() + 3600);
-  header('Location: ../index.php');
 ?>
